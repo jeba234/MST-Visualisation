@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MST Visualizer (Prim's & Kruskal's)</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>MST Visualizer</h1>
+  <div class="controls">
+    <input type="number" id="nodeCountInput" placeholder="Enter number of nodes" min="1" max="20">
+    <button onclick="initializeUserGraph()">Clear</button>
+    <button id="pauseResumeButton" onclick="togglePauseResume()">Pause</button>
+    <button id="primsButton" onclick="startPrimsAlgorithm()">Prim's Algorithm</button>
+    <button id="kruskalsButton" onclick="startKruskalsAlgorithm()">Kruskal's Algorithm</button>
+  </div>
+  <canvas id="graphCanvas" width="1000" height="600"></canvas>
+  <div id="statusBox">Click to add nodes, drag between nodes to create edges.</div>
+  <script src="script.js"></script>
+</body>
+</html>

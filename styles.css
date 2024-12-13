@@ -1,0 +1,131 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 2.5em;
+    color: #003366;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.controls {
+    margin: 20px 0;
+}
+
+input, button {
+    margin: 10px;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+input {
+    border: 2px solid #007BFF;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+}
+
+input:focus {
+    border-color: #0056b3;
+    box-shadow: 0px 0px 5px #0056b3;
+}
+
+button {
+    cursor: pointer;
+    color: #fff;
+    background-color: #007BFF;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    background-color: #003d80;
+    transform: scale(1);
+}
+
+#pauseResumeButton {
+    background-color: #FF5733;
+}
+
+#pauseResumeButton:hover {
+    background-color: #C44129;
+}
+
+#primsButton, #kruskalsButton {
+    background-color: #28a745;
+}
+
+#primsButton:hover, #kruskalsButton:hover {
+    background-color: #218838;
+}
+
+canvas {
+    border: 3px solid #003366;
+    background-color: #e6f7ff;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+#statusBox {
+    margin: 20px auto;
+    padding: 15px;
+    width: 80%;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #004d66;
+    background-color: #f9f9f9;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    white-space: pre-line;
+}
+
+#statusBox::before {
+    content: 'Status: ';
+    font-weight: bold;
+    color: #003366;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    canvas {
+        width: 90%;
+        height: auto;
+    }
+
+    #statusBox {
+        font-size: 16px;
+    }
+}
